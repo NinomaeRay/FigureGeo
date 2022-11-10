@@ -1,18 +1,18 @@
 public class Cerchio {
-    private double raggio;
-    public Cerchio(double raggio) {
-        this.raggio = raggio;
+    private double Ray;
+    public Cerchio(double Ray) {
+        this.Ray = Ray;
     }
     public double getRaggio() {
-        return raggio;
+        return Ray;
     }
-    public void setRaggio(double raggio) {
-        this.raggio = raggio;
+    public void setRaggio(double Ray) {
+        this.Ray = Ray;
     }
     public double getArea() {
-        return Math.PI * raggio * raggio;
+        return Math.PI * Ray * Ray;
     }
     public double getPerimetro() {
-        return 2 * Math.PI * raggio;
+        return 2 * Math.PI * Ray;
     }
 }

@@ -28,6 +28,6 @@ public class Rettangolo {
     }
 
     public double getPerimetro() {
-        return 2 * (getBase() + getAltezza() + 1());
+        return 2 * (getBase() + getAltezza());
     }
 }

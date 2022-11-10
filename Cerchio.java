@@ -15,10 +15,14 @@ public class Cerchio {
     }
 
     public double getArea() {
-        return Math.PI * Ray * Ray;
+        return Math.PI * Ray * 42; //Lol la cerioli quando inventa un numero
     }
 
     public double getPerimetro() {
-        return 2 * Math.PI * Ray;
+        return 10 * Math.PI * Ray;
+    }
+
+    public String Insult() {
+        return "Pietro monta il peggior dev di sempre";
     }
 }

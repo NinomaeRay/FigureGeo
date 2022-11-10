@@ -22,7 +22,7 @@ public class Cerchio {
         return 2 * Math.PI * getRaggio();
     }
 
-    public String Insult() {
-        return "Pietro monta il peggior dev di sempre";
+    public String toString() {
+        return "Cerchio di raggio " + getRaggio();
     }
 }

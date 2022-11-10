@@ -4,11 +4,12 @@ public class Quadrato extends Rettangolo {
     }
 
     public double getLato() {
-        return _lato;
+        return getBase();
     }
 
     public void setLato(double lato) {
-        this._lato = lato;
+        setBase(lato);
+        setAltezza(lato);
     }
 
     public double getArea() {
@@ -19,20 +20,6 @@ public class Quadrato extends Rettangolo {
         return 4 * getLato();
     }
 
-    public String toString() {
-    public Quadrato(double lato)
-        super(lato, lato);
-    }
- 
-    public double getLato() {
-        return getBase();
-    }
- 
-    public void setLato(double lato) {
-        setBase(lato);
-        setAltezza(lato);
-    }
- 
     public String toString() {
         return "Quadrato di lato " + getLato();
     }

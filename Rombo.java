@@ -31,16 +31,16 @@ public class Rombo {
         return 4 * Math.sqrt(getDiagonaleMaggiore() * getDiagonaleMaggiore() + getDiagonaleMinore() * getDiagonaleMinore()) / 2;
     }
 
-    public void stampa() {
-        System.out.println("Rombo di diagonali " + getDiagonaleMaggiore() + " e " + getDiagonaleMinore());
+    public String toString() {
+        return "Rombo di diagonali " + getDiagonaleMaggiore() + " e " + getDiagonaleMinore();
+    }
+
+    public void enlarge(double factor) {
+        setDiagonaleMaggiore(getDiagonaleMaggiore() * factor);
+        setDiagonaleMinore(getDiagonaleMinore() * factor);
     }
 
     public void piuGrandee(){
         System.out.println("La diagonale maggiore è più grande della diagonale minore");
-    }
-
-    public void enlarge(){
-        setDiagonaleMaggiore(getDiagonaleMaggiore() * 2);
-        setDiagonaleMinore(getDiagonaleMinore() * 2);
     }
 }

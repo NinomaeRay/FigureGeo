@@ -1,8 +1,8 @@
-public class Rettangolo {
+public class Triangolo {
     private double base;
     private double altezza;
 
-    public Rettangolo(double base, double altezza) {
+    public Triangolo(double base, double altezza) {
         this.base = base;
         this.altezza = altezza;
     }
@@ -24,10 +24,10 @@ public class Rettangolo {
     }
 
     public double getArea() {
-        return base * altezza;
+        return base * altezza / 2;
     }
 
     public double getPerimetro() {
-        return 2 * (base + altezza + 1);
+        return base + altezza + Math.sqrt(base * base + altezza * altezza);
     }
 }

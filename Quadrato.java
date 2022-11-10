@@ -1,8 +1,6 @@
-public class Quadrato {
-    private double _lato;
-
+public class Quadrato extends Rettangolo {
     public Quadrato(double lato) {
-        this._lato = lato;
+        super(lato, lato);
     }
 
     public double getLato() {
@@ -22,7 +20,25 @@ public class Quadrato {
     }
 
     public String toString() {
+    public Quadrato(double lato)
+        super(lato, lato);
+    }
+ 
+    public double getLato() {
+        return getBase();
+    }
+ 
+    public void setLato(double lato) {
+        setBase(lato);
+        setAltezza(lato);
+    }
+ 
+    public String toString() {
         return "Quadrato di lato " + getLato();
+    }
+
+    public Rettangolo DoubleQuadrato(){
+        return new Rettangolo(getLato()*2, getLato());
     }
 
     public void enlarge(double factor) {
@@ -33,4 +49,5 @@ public class Quadrato {
         System.out.println("I love squares!");
     }
 }
+
     
